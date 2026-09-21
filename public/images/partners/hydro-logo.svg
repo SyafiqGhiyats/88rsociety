@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" fill="none">
+  <circle cx="25" cy="25" r="14" stroke="#00E5FF" stroke-width="3"/>
+  <path d="M 25 16 C 25 16 32 23 32 26 C 32 29.8 28.8 33 25 33 C 21.2 33 18 29.8 18 26 C 18 23 25 16 25 16 Z" fill="#00E5FF"/>
+  <text x="48" y="31" font-family="sans-serif" font-size="16" font-weight="800" letter-spacing="1" fill="#FFFFFF">HYDRO</text>
+</svg>

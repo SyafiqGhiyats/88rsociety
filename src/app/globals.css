@@ -1,26 +1,132 @@
 @import "tailwindcss";
 
+@theme {
+  --color-matte-black: #07080a;
+  --color-dark-bg: #090b0f;
+  --color-dark-card: #12141a;
+  --color-dark-card-hover: #161922;
+  --color-dark-surface: #141720;
+  --color-dark-subtle: #0f1116;
+  --color-charcoal: #0f1115;
+  --color-card: #14171f;
+  --color-card-elevated: #1a1e27;
+  --color-card-darker: #0a0c10;
+  --color-card-footer: #060709;
+  --color-card-border: rgba(255, 255, 255, 0.08);
+
+  --color-primary: #6c1a1a;
+  --color-primary-hover: #852020;
+  --color-primary-light: #9e2828;
+  --color-primary-dark: #4f1313;
+  --color-primary-glow: rgba(108, 26, 26, 0.45);
+
+  --color-hyper-orange: #ff5722;
+  --color-hyper-orange-hover: #f4511e;
+  --color-orange-glow: rgba(255, 87, 34, 0.35);
+
+  --color-cyan: #00e5ff;
+  --color-cyan-glow: #00e5ff;
+
+  --color-spotify: #1db954;
+  --color-purple-accent: #a78bfa;
+
+  --shadow-primary: 0 0 25px rgba(108, 26, 26, 0.45);
+  --shadow-primary-sm: 0 0 15px rgba(108, 26, 26, 0.35);
+  --shadow-primary-lg: 0 0 30px rgba(108, 26, 26, 0.55);
+  --shadow-orange: 0 0 25px rgba(255, 87, 34, 0.35);
+  --drop-shadow-primary: 0 0 20px rgba(108, 26, 26, 0.45);
+
+  --font-display: var(--font-display), sans-serif;
+  --font-sans: var(--font-sans), sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #07080a;
+  --foreground: #f8fafc;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  selection-background-color: #6c1a1a;
+  selection-color: #ffffff;
+}
+
+::selection {
+  background-color: #6c1a1a;
+  color: #ffffff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07080a;
+}
+::-webkit-scrollbar-thumb {
+  background: #232732;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6c1a1a;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(18, 20, 26, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-nav {
+  background: rgba(7, 8, 10, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Glow effects */
+.glow-primary {
+  box-shadow: 0 0 25px rgba(108, 26, 26, 0.45);
+}
+
+.glow-primary-sm {
+  box-shadow: 0 0 12px rgba(108, 26, 26, 0.35);
+}
+
+.glow-orange {
+  box-shadow: 0 0 25px rgba(255, 87, 34, 0.35);
+}
+
+/* Grid background pattern */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Slanted athletic cuts */
+.slanted-cut {
+  clip-path: polygon(0 0, 100% 0, calc(100% - 14px) 100%, 0 100%);
+}
+
+.slanted-card {
+  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.08); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
