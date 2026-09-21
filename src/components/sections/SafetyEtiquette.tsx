@@ -8,7 +8,7 @@ import {
   ShieldAlert,
   HeartPulse,
   AlertTriangle,
-  CheckCircle2
+  CheckCircle2,
 } from "lucide-react";
 
 export function SafetyEtiquette() {
@@ -16,7 +16,7 @@ export function SafetyEtiquette() {
     Flashlight: <Flashlight className="w-6 h-6 text-red-400" />,
     Megaphone: <Megaphone className="w-6 h-6 text-cyan" />,
     ShieldAlert: <ShieldAlert className="w-6 h-6 text-hyper-orange" />,
-    HeartPulse: <HeartPulse className="w-6 h-6 text-rose-400" />
+    HeartPulse: <HeartPulse className="w-6 h-6 text-rose-400" />,
   };
 
   return (
@@ -26,11 +26,13 @@ export function SafetyEtiquette() {
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <Badge variant="orange">PROTOKOL KEAMANAN UTAMA</Badge>
           <h2 className="text-3xl sm:text-5xl font-extrabold uppercase tracking-tight text-white font-sans">
-            ETIKA JALAN RAYA & <span className="text-hyper-orange">KEAMANAN LARI</span>
+            ETIKA JALAN RAYA &{" "}
+            <span className="text-hyper-orange">KEAMANAN LARI</span>
           </h2>
           <p className="text-slate-400 text-base sm:text-lg leading-relaxed">
-            Berlari di jalanan Jakarta pada malam dan pagi hari membutuhkan kedisiplinan.
-            Kami bangga menjadi komunitas yang aman, tertib, dan saling menjaga.
+            Berlari di jalanan Bandung pada malam dan pagi hari membutuhkan
+            kedisiplinan. Kami bangga menjadi komunitas yang aman, tertib, dan
+            saling menjaga.
           </p>
         </div>
 
@@ -82,9 +84,9 @@ export function SafetyEtiquette() {
               </h4>
               <p className="text-xs sm:text-sm text-slate-400 max-w-2xl leading-relaxed">
                 Setiap sesi resmi 88rsociety didampingi oleh pacer sweeper
-                terlatih yang membawa perlengkapan pertolongan pertama, pengganti
-                elektrolit, dan jalur komunikasi darurat. Kamu dapat berlari
-                dengan tenang dan aman.
+                terlatih yang membawa perlengkapan pertolongan pertama,
+                pengganti elektrolit, dan jalur komunikasi darurat. Kamu dapat
+                berlari dengan tenang dan aman.
               </p>
             </div>
           </div>

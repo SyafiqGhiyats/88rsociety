@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import { communityConfig } from "@/data/community";
 import {
@@ -9,7 +8,7 @@ import {
   ArrowUp,
   MapPin,
   Clock,
-  ExternalLink
+  ExternalLink,
 } from "lucide-react";
 
 export function Footer() {
@@ -41,7 +40,7 @@ export function Footer() {
             <div className="flex items-center gap-3 pt-2">
               <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-slate-300">
                 <MapPin className="w-3.5 h-3.5 text-red-400" />
-                Jakarta, Indonesia
+                Cimahi, Indonesia
               </span>
               <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-slate-300">
                 <Clock className="w-3.5 h-3.5 text-red-400" />

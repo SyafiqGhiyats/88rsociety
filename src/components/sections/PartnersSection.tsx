@@ -15,7 +15,7 @@ export function PartnersSection() {
     brandName: "",
     contactEmail: "",
     collaborationType: "Uji Coba Produk (Footwear / Apparel)",
-    message: ""
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -28,7 +28,7 @@ export function PartnersSection() {
         brandName: "",
         contactEmail: "",
         collaborationType: "Uji Coba Produk (Footwear / Apparel)",
-        message: ""
+        message: "",
       });
     }, 2500);
   };
@@ -85,7 +85,7 @@ export function PartnersSection() {
                 Bermitra dengan 88rsociety
               </span>
               <h3 className="text-2xl sm:text-4xl font-black text-white uppercase tracking-tight font-sans">
-                BAWA BRAND ANDA KE DALAM KULTUR LARI JAKARTA
+                BAWA BRAND ANDA KE DALAM KULTUR LARI CIMAHI
               </h3>
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
                 Mulai dari uji coba produk (product seeding) dan pos hidrasi
@@ -146,7 +146,7 @@ export function PartnersSection() {
           <form onSubmit={handleSubmit} className="space-y-4">
             <p className="text-xs text-slate-400">
               Isi formulir singkat ini untuk membagikan gagasan kolaborasi Anda
-              bersama 1.200+ pelari aktif Jakarta.
+              bersama 1.200+ pelari aktif Cimahi.
             </p>
 
             <div>
@@ -190,7 +190,7 @@ export function PartnersSection() {
                 onChange={(e) =>
                   setFormData({
                     ...formData,
-                    collaborationType: e.target.value
+                    collaborationType: e.target.value,
                   })
                 }
                 className="w-full px-4 py-2.5 rounded-xl bg-dark-bg border border-white/10 text-sm text-white focus:outline-hidden focus:border-primary"

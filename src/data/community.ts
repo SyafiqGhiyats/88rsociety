@@ -29,7 +29,7 @@ export const communityConfig: CommunityConfig = {
     {
       label: "Pelari Aktif",
       value: "1.200+",
-      subtext: "Berlari rutin setiap bulan di Jakarta",
+      subtext: "Berlari rutin setiap bulan di Cimahi",
     },
     {
       label: "Kilometer Mingguan",
@@ -231,7 +231,7 @@ export const communityConfig: CommunityConfig = {
       title: "Etika Jalan Raya & Pengguna Lain",
       shortRule: "Berbagi Ruang Aspal",
       description:
-        "Kita berbagi jalanan Jakarta dengan pengendara dan pejalan kaki. Jaga formasi maksimal 2 banjar di ruas jalan umum dan jangan pernah menerobos lampu merah penyeberangan.",
+        "Kita berbagi jalanan Cimahi dengan pengendara dan pejalan kaki. Jaga formasi maksimal 2 banjar di ruas jalan umum dan jangan pernah menerobos lampu merah penyeberangan.",
       iconName: "ShieldAlert",
       highlight: "Formasi Maksimal 2 Banjar Sejajar",
     },

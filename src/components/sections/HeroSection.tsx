@@ -19,7 +19,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero-runner.jpg"
-          alt="Pelari Urban 88rsociety Jakarta"
+          alt="Pelari Urban 88rsociety Cimahi"
           fill
           priority
           sizes="100vw"

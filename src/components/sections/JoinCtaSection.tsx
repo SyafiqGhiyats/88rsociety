@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import { communityConfig } from "@/data/community";
 import { Button } from "@/components/ui/Button";
@@ -36,8 +35,9 @@ export function JoinCtaSection() {
         </h2>
 
         <p className="text-slate-300 text-base sm:text-xl max-w-2xl mx-auto leading-relaxed">
-          Bergabunglah bersama 1.200+ pelari Jakarta setiap Selasa di GBK Senayan atau Minggu di sepanjang
-          Sudirman. Pasang sepatumu, temukan ritmemu, dan biarkan energi positif membawamu maju.
+          Bergabunglah bersama 1.200+ pelari Cimahi setiap Selasa di GBK Senayan
+          atau Minggu di sepanjang Sudirman. Pasang sepatumu, temukan ritmemu,
+          dan biarkan energi positif membawamu maju.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
