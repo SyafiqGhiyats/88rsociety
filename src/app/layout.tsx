@@ -5,14 +5,12 @@ import "./globals.css";
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-display",
-  weight: ["600", "700", "800", "900"],
   display: "swap",
 });
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
-  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -46,7 +44,7 @@ export const metadata: Metadata = {
       "Bergabunglah bersama komunitas lari urban terdepan di Cimahi. Tuesday Night Run • Sunday Long Run. Terbuka untuk semua kecepatan. 100% Gratis.",
     images: [
       {
-        url: "/images/hero-runner.jpg",
+        url: "/images/hero-runner.webp",
         width: 1200,
         height: 630,
         alt: "Komunitas Lari Urban 88rsociety Cimahi",
@@ -58,7 +56,7 @@ export const metadata: Metadata = {
     title: "88rsociety • Komunitas Lari Cimahi",
     description:
       "Bergabunglah bersama komunitas lari urban terdepan di Cimahi. Tuesday Night Run • Sunday Long Run. Gratis untuk semua.",
-    images: ["/images/hero-runner.jpg"],
+    images: ["/images/hero-runner.webp"],
     creator: "@88rsociety",
   },
   robots: {

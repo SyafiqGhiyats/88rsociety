@@ -18,8 +18,8 @@ export function Footer() {
 
   return (
     <footer className="relative bg-card-footer border-t border-white/10 pt-16 pb-12 overflow-hidden">
-      {/* Background ambient lighting */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-primary/10 blur-[120px] pointer-events-none" />
+      {/* Background ambient lighting (Zero GPU-blur overhead) */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] sm:w-[800px] h-[250px] sm:h-[300px] bg-[radial-gradient(ellipse_at_top,rgba(108,26,26,0.2)_0%,transparent_70%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">

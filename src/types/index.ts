@@ -16,20 +16,6 @@ export interface RunSession {
   highlight?: boolean;
 }
 
-export interface PaceGroup {
-  id: string;
-  name: string;
-  shortName: string;
-  paceRange: string;
-  minPaceSeconds: number; // e.g. 270 (4:30)
-  maxPaceSeconds: number; // e.g. 300 (5:00)
-  targetSpeed: string;
-  suitableFor: string;
-  pacers: string[];
-  color: string;
-  badge: string;
-}
-
 export interface Pillar {
   id: string;
   title: string;
@@ -109,7 +95,6 @@ export interface CommunityConfig {
     contactEmail: string;
   };
   sessions: RunSession[];
-  paceGroups: PaceGroup[];
   pillars: Pillar[];
   safetyRules: SafetyRule[];
   photoDrops: PhotoDrop[];

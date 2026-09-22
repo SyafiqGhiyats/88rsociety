@@ -76,7 +76,7 @@ export function PartnersSection() {
 
         {/* Partnership Proposal Banner */}
         <div className="relative rounded-3xl bg-gradient-to-r from-dark-surface via-card-elevated to-dark-card border border-white/15 p-8 sm:p-12 overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-cyan/5 blur-[120px] pointer-events-none rounded-full" />
+          <div className="absolute top-0 right-0 w-80 sm:w-96 h-80 sm:h-96 bg-[radial-gradient(circle_at_center,rgba(0,229,255,0.1)_0%,transparent_70%)] pointer-events-none rounded-full" />
 
           <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
             <div className="space-y-3 max-w-2xl">

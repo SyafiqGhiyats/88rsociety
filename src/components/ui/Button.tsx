@@ -2,7 +2,6 @@
 
 import React from "react";
 import { cn } from "@/lib/utils";
-import confetti from "canvas-confetti";
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "volt" | "outline" | "ghost" | "orange" | "dark";
@@ -29,16 +28,19 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ) => {
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
       if (triggerConfetti) {
-        try {
-          confetti({
-            particleCount: 75,
-            spread: 60,
-            origin: { y: 0.8 },
-            colors: ["#6C1A1A", "#FF5722", "#00E5FF", "#FFFFFF"]
+        import("canvas-confetti")
+          .then((module) => {
+            const confetti = module.default;
+            confetti({
+              particleCount: 75,
+              spread: 60,
+              origin: { y: 0.8 },
+              colors: ["#6C1A1A", "#FF5722", "#00E5FF", "#FFFFFF"]
+            });
+          })
+          .catch(() => {
+            // ignore if failed to load
           });
-        } catch {
-          // ignore if canvas not supported
-        }
       }
       if (onClick) onClick(e);
     };

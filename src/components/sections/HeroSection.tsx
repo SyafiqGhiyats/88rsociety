@@ -18,18 +18,19 @@ export function HeroSection() {
       {/* Background Hero Image with Next/Image and priority loading */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-runner.jpg"
+          src="/images/hero-runner.webp"
           alt="Pelari Urban 88rsociety Cimahi"
           fill
           priority
-          sizes="100vw"
-          className="object-cover object-center brightness-[0.45] contrast-[1.1] scale-105"
+          sizes="(max-width: 768px) 100vw, 100vw"
+          quality={80}
+          className="object-cover object-center brightness-[0.45] contrast-[1.05]"
         />
         {/* Dark Vignette & Gradient Overlays */}
         <div className="absolute inset-0 bg-gradient-to-t from-matte-black via-matte-black/60 to-matte-black/80" />
         <div className="absolute inset-0 bg-gradient-to-r from-matte-black via-transparent to-matte-black/90" />
-        {/* Subtle Maroon Neon Glow in corner */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-primary/20 blur-[140px] pointer-events-none rounded-full" />
+        {/* Subtle Maroon Radial Glow in corner */}
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] sm:w-[600px] h-[300px] sm:h-[350px] bg-[radial-gradient(circle_at_center,rgba(108,26,26,0.35)_0%,transparent_70%)] pointer-events-none rounded-full" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center sm:text-left pt-6 sm:pt-12">

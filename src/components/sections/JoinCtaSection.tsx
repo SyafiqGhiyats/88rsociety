@@ -12,14 +12,16 @@ export function JoinCtaSection() {
       {/* Background Graphic */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/drops/drop-2.jpg"
+          src="/images/drops/drop-2.webp"
           alt="Pelari saat matahari terbit"
           fill
+          loading="lazy"
+          quality={75}
           sizes="100vw"
-          className="object-cover object-center brightness-[0.25] contrast-[1.2]"
+          className="object-cover object-center brightness-[0.25] contrast-[1.1]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-matte-black via-matte-black/85 to-matte-black" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-primary/20 blur-[130px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] sm:w-[600px] h-[250px] sm:h-[300px] bg-[radial-gradient(circle_at_center,rgba(108,26,26,0.35)_0%,transparent_70%)] rounded-full pointer-events-none" />
       </div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">

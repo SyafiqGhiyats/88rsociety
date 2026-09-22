@@ -21,9 +21,9 @@ export function AboutPillars() {
 
   return (
     <section id="about" className="py-24 relative overflow-hidden">
-      {/* Subtle Background Elements */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-primary/10 blur-[140px] pointer-events-none rounded-full" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-hyper-orange/5 blur-[140px] pointer-events-none rounded-full" />
+      {/* Subtle Background Elements (Hardware-accelerated radial gradients) */}
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-80 sm:w-96 h-80 sm:h-96 bg-[radial-gradient(circle_at_center,rgba(108,26,26,0.2)_0%,transparent_70%)] pointer-events-none rounded-full" />
+      <div className="absolute bottom-0 right-0 w-80 sm:w-96 h-80 sm:h-96 bg-[radial-gradient(circle_at_center,rgba(255,87,34,0.12)_0%,transparent_70%)] pointer-events-none rounded-full" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
